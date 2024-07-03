@@ -5,25 +5,39 @@ Installing both ( ROS noetic + ROS2 foxy )
 <br>
 <br>
 
-<img src=https://github.com/shoch77/task1AI/assets/152804738/7a0e1cd1-cf7d-40ab-81fc-b4d465ce5e28 width=10%> <br>
- ^^ The very fist step is to download (VirtualBox), <br>
-    And to do that we can directly go to this link for downloading:
+### Step 1: Download and Install VirtualBox <br>
 
-``` bash
-https://www.virtualbox.org/wiki/Downloads
-```
+<img src=https://github.com/shoch77/task1AI/assets/152804738/7a0e1cd1-cf7d-40ab-81fc-b4d465ce5e28 width=10%> 
 <br>
+The very fist step is to Download and Install VirtualBox, And to do that: <br>
+
+- go to this link: https://www.virtualbox.org/wiki/Downloads
+- Download the version for your operating system (Windows, macOS, Linux)
 <br>
 
-<img src= https://github.com/shoch77/task1AI/assets/152804738/89dda53a-26c7-49c2-8449-9a788516683f width=10%> <br>
-^^ Next, we need to download (Ubuntu 20.04), <br>
-   i did download the Ubuntu mate version, but it is okay if you choose any other version, <br> <br>
-   and here is the link for the downloading:
-```bash
-https://cdimage.ubuntu.com/ubuntu-mate/releases/20.04/release/
-```
-   
+### Step 2: Downloading Ubuntu 20.04 <br>
+
+<img src= https://github.com/shoch77/task1AI/assets/152804738/89dda53a-26c7-49c2-8449-9a788516683f width=10%> 
 <br>
+i did download the Ubuntu mate version, but it is okay if you choose any other version, And to do that: <br> 
+
+- go to this link: https://cdimage.ubuntu.com/ubuntu-mate/releases/20.04/release/
+- Download the Ubuntu 20.04 mate ISO file 
+<br>
+
+
+### Step 3: Create a New Virtual Machine in VirtualBox <br> 
+
+1:: Open VirtualBox and click on New to create a new virtual machine. <br>
+2:: Name your virtual machine and select Linux as the type and Ubuntu (64-bit) as the version. <br>
+3:: Allocate memory (RAM) to your virtual machine. <br>
+4:: Create a virtual hard disk. Select Create a virtual hard disk now and click Create. <br>
+5:: Choose VDI (VirtualBox Disk Image) as the hard disk file type and click Next. <br>
+6:: Choose Dynamically allocated and click Next. <br>
+7:: Set the size of the virtual hard disk (20GB for mate) and click Create. <br>
+
+
+### Step 4: Install ROS on Ubuntu 20.04
 <br>
 
 ** ROS noetic ** 
@@ -34,7 +48,7 @@ https://cdimage.ubuntu.com/ubuntu-mate/releases/20.04/release/
 <img src= https://github.com/shoch77/task1AI/assets/152804738/274d0c2e-3e60-47ff-a8ce-d315949966c9 width=20%>
 
 # steps for Installation <br>
-
+- Once Ubuntu 20.04 is installed and running in virtual machine, we can proceed with installing ROS1:
  <br> <br>
 
 1:: Setup your computer to accept software from packages.ros.org <br>
@@ -44,22 +58,32 @@ https://cdimage.ubuntu.com/ubuntu-mate/releases/20.04/release/
   ```
 
 2:: Set up your keys <br>
+we set up the keys needed to authenticate packages.ros.org:
 ```bash
 sudo apt install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
-3:: make sure your Debian package index is up-to-date <br>
+3:: Update package index <br>
+make sure the Debian package index is up-to-date <br>
 ```bash
 sudo apt update
 ```
 
-4:: Desktop-Full Install <br>
+4:: Install ROS 1 <br>
+You have a choice between a full desktop install and a minimal install (just command-line tools). <br>
+For the desktop install (recommended for beginners):
 ```bash
 sudo apt install ros-noetic-desktop-full
 ```
+5:: Initialize rosdep <br>
+Before using ROS, initialize rosdep:
+```bash
+sudo rosdep init
+rosdep update
+```
 
-5:: Environment setup <br> <br>
+6:: Environment setup <br> <br>
 we must source this script in every bash terminal we use ROS in. <br>
 ```bash
 source /opt/ros/noetic/setup.bash
@@ -77,7 +101,7 @@ or <br>
 echo "source /opt/ros/noetic/setup.zsh" >> ~/.zshrc
 source ~/.zshrc
 ```
-6:: Dependencies for building packages <br>
+7:: Dependencies for building packages <br>
 ```bash
 sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 ```
