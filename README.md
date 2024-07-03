@@ -37,7 +37,7 @@ https://cdimage.ubuntu.com/ubuntu-mate/releases/20.04/release/
 
  <br> <br>
 
-1:: Setup your computer to accept software from packages.ros.org. <br>
+1:: Setup your computer to accept software from packages.ros.org <br>
 
   ```bash
   sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
@@ -49,7 +49,7 @@ sudo apt install curl # if you haven't already installed curl
 curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo apt-key add -
 ```
 
-3:: make sure your Debian package index is up-to-date: <br>
+3:: make sure your Debian package index is up-to-date <br>
 ```bash
 sudo apt update
 ```
@@ -64,10 +64,9 @@ we must source this script in every bash terminal we use ROS in. <br>
 ```bash
 source /opt/ros/noetic/setup.bash
 ```
-It can be convenient to automatically source this script every time a new shell is launched. <br>
-These commands will do that for you: <br>
+It can be convenient to automatically source this script every time a new shell is launched, <br>
+These commands will help: <br>
 
-!!! If you have more than one ROS distribution installed, ~/.bashrc must only source the setup.bash for the version you are currently using. <br>
 ```bash
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
 source ~/.bashrc
@@ -94,9 +93,9 @@ $ roscore
 <img src = https://github.com/shoch77/task1AI/assets/152804738/63c65463-0301-4c05-b182-d1241dc0b83c width=50%>
 
 <br> <br> 
---
+----
 link: https://wiki.ros.org/ROS/Installation 
---
+----
 
 -------------------------------------------------------------
 <br>
@@ -163,7 +162,7 @@ source /opt/ros/foxy/setup.bash
 <br>
 ------
 
- Trying some examples  
+^^ Trying some examples  
 
 :: In one terminal, source the setup file and then run a C++ talker 
 <br>
@@ -178,4 +177,6 @@ source /opt/ros/foxy/setup.bash
 <br>
 <br>
 
-
+----
+link: https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html
+----
