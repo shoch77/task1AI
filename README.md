@@ -84,7 +84,8 @@ sudo apt install python3-rosdep python3-rosinstall python3-rosinstall-generator 
 
 --------------- <br>
 
-^^ To start the ROS (master node) <br>
+^^ To see if the ros has installed corecctrlly, we test the ROS's (master node), <br>
+   and to do that: 
 ```bash
 $ roscore
 ```
@@ -160,7 +161,10 @@ sudo apt install ros-dev-tools
 source /opt/ros/foxy/setup.bash
 ```
 <br>
-------
+------ <br> 
+
+since there is no master node in Ros2, <br>
+we need to do some examples to see if its working or not <br>
 
 ^^ Trying some examples  
 
