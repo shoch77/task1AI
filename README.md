@@ -17,7 +17,7 @@ https://www.virtualbox.org/wiki/Downloads
 
 <img src= https://github.com/shoch77/task1AI/assets/152804738/89dda53a-26c7-49c2-8449-9a788516683f width=10%> <br>
 ^^ Next, we need to download (Ubuntu 20.04), <br>
-   i did download the Ubuntu mate version, but it is okay if you chose any other version, <br> <br>
+   i did download the Ubuntu mate version, but it is okay if you choose any other version, <br> <br>
    and here is the link for the downloading:
 ```bash
 https://cdimage.ubuntu.com/ubuntu-mate/releases/20.04/release/
