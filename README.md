@@ -7,7 +7,7 @@ Installing both ( ROS noetic + ROS2 foxy )
 
 ### Step 1: Download and Install VirtualBox <br>
 
-<img src=https://github.com/shoch77/task1AI/assets/152804738/7a0e1cd1-cf7d-40ab-81fc-b4d465ce5e28 width=10%> 
+<img src=https://github.com/shoch77/task1AI/assets/152804738/7a0e1cd1-cf7d-40ab-81fc-b4d465ce5e28 width=15%> 
 <br>
 The very fist step is to Download and Install VirtualBox, And to do that: <br>
 
@@ -17,9 +17,18 @@ The very fist step is to Download and Install VirtualBox, And to do that: <br>
 
 ### Step 2: Downloading Ubuntu 20.04 <br>
 
-<img src= https://github.com/shoch77/task1AI/assets/152804738/89dda53a-26c7-49c2-8449-9a788516683f width=10%> 
+<img src=https://github.com/shoch77/task1AI/assets/152804738/89dda53a-26c7-49c2-8449-9a788516683f width=15%> 
 <br>
-i did download the Ubuntu mate version, but it is okay if you choose any other version, And to do that: <br> 
+
+i did download the Ubuntu mate version, but it is okay if you choose any other version <br>
+
+## ^^ The Requirements for Ubuntu Mate
+<br>
+
+<img src=https://github.com/shoch77/task1AI/assets/152804738/32de523f-7a03-4d3b-b6da-4d4b03a59354 width=80%>
+<br><br>
+
+ to download it: <br> 
 
 - go to this link: https://cdimage.ubuntu.com/ubuntu-mate/releases/20.04/release/
 - Download the Ubuntu 20.04 mate ISO file 
@@ -47,7 +56,7 @@ i did download the Ubuntu mate version, but it is okay if you choose any other v
 
 <img src= https://github.com/shoch77/task1AI/assets/152804738/274d0c2e-3e60-47ff-a8ce-d315949966c9 width=20%>
 
-# steps for Installation <br>
+## steps for Installation <br>
 - Once Ubuntu 20.04 is installed and running in virtual machine, we can proceed with installing ROS1:
  <br> <br>
 
