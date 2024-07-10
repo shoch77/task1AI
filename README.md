@@ -1,4 +1,4 @@
-# task1AI
+# task1AI(WEEK2)
 Installing both ( ROS noetic + ROS2 foxy )
 
 <br>
